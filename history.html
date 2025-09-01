@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fibonacci History</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="index.html">
+      <img src="Assets/easyso_logo.png" alt="Easyso Logo" class="logo" />
+      <div>
+        <div class="title">Fibonacci History</div>
+        <div class="muted">Learn the origins</div>
+      </div>
+    </a>
+  </header>
+
+  <main class="card">
+    <h2>About the Fibonacci Sequence</h2>
+    <p>
+      The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, starting from 0 and 1. It was introduced to Western mathematics by Leonardo of Pisa, known as Fibonacci, in his 1202 book *Liber Abaci*. The ratio of successive Fibonacci numbers approximates the golden ratio, which appears in nature, art, and architecture.
+    </p>
+    <p>
+      You can read more on the <a href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">Wikipedia page</a>.
+    </p>
+  </main>
+
+  <footer>
+    <div>© 2025 All rights reserved.</div>
+    <div id="datestamp">—</div>
+  </footer>
+</div>
+<script>
+  const dateEl = document.getElementById('datestamp');
+  dateEl.textContent = new Date().toLocaleDateString('en-GB', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fibonacci Game</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="#">
+      <img src="Assets/easyso_logo.png" alt="Easyso Logo" class="logo" />
+      <div>
+        <div class="title">Fibonacci Game</div>
+        <div class="muted">Is your number Fibonacci?</div>
+      </div>
+    </a>
+    <div class="muted" id="clock">--:--:--</div>
+  </header>
+
+  <main class="card">
+    <div class="grid">
+      <section>
+        <div class="field">
+          <input id="n" type="number" min="0" step="1" placeholder="Enter a positive integer (e.g., 21)" />
+          <button class="btn" id="checkBtn">Check</button>
+        </div>
+        <div class="hint">Hint: 0, 1, 1, 2, 3, 5, 8, 13, 21...</div>
+        <div id="result" class="result" style="margin-top:14px;">Result will appear here.</div>
+      </section>
+
+      <aside>
+        <div class="kpis">
+          <div class="kpi">
+            <div class="muted">Formula</div>
+            <div><img src="Assets/formula.png" alt="5n² ± 4 perfect square check" style="max-width:100%;"></div>
+          </div>
+          <div class="kpi">
+            <div class="muted">More Info</div>
+            <div><a href="history.html" class="link">Click for Fibonacci History</a></div>
+          </div>
+          <div class="kpi">
+            <div class="muted">Status</div>
+            <div id="status">—</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div>© 2025 All rights reserved.</div>
+    <div id="datestamp">—</div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
